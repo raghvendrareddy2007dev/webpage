@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display: flex;
+            background-color: antiquewhite;
+            border: 1px solid red;
+            border-radius: 10px;
+            color: black;
+            height: 300px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            margin-left: 45%;
+
+        }
+
+        #navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            padding: 150px;
+            margin: auto;
+            text-decoration: none;
+            font-size: 4em;
+
+        }
+
+        #navbar ul li a:hover {
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2em;
+            border: 2px solid rgb(255, 230, 196);
+            border-radius: 20px;
+
+        }
+
+        .container .box {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 4em;
+        }
+
+        .box1 img {
+            width: 100%;
+            height: 80vh;
+            margin: 20px 2px;
+        }
+
+        .parent {
+            display: flex;
+            border: 2px solid red;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            height: 600px;
+            box-shadow: 15px 15px 30px grey;
+            background: papayawhip;
+        }
+
+        .child {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            width: 250px;
+            height: 200px;
+        }
+
+        .child img {
+            width: 600px;
+            height: 500px;
+            border-radius: 10px;
+            transition: 0.5s;
+            border: 10px solid black;
+        }
+
+        .child:hover img {
+            opacity: 0.3;
+            box-shadow: -10px -10px 50px black;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            font-size: 2rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        .child:hover:hover .text {
+            opacity: 1;
+        }
+
+        h1 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 4em;
+            border-top: 5px solid red;
+        }
+
+        footer a {
+            color: orange;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="Loading..">
+        </div>
+        <div class="box">
+            <h1>
+                Telangana
+            </h1>
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li class="item"><a herf="#">Home</a></li>
+                <li class="item"><a herf="#">About</a></li>
+                <li class="item"><a herf="#">Services</a></li>
+                <li class="item"><a herf="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="box1">
+        <img src="telangana.png" alt="Loading..">
+    </div>
+
+    <h1>Explore Telangana</h1>
+    <div class="parent">
+
+        <div class="child">
+            <img src="charminar.png">
+            <div class="text">Charminar</div>
+        </div>
+
+        <div class="child">
+            <img src="golconda.png">
+            <div class="text">Golconda</div>
+        </div>
+
+        <div class="child">
+            <img src="ramoji.png">
+            <div class="text">Ramoji Film City</div>
+        </div>
+
+        <div class="child">
+            <img src="Durgam Cheruvu Cable Bridge.png">
+            <div class="text">Durgam Cheruvu Cable Bridge</div>
+        </div>
+
+        <div class="child">
+            <img src="hussain sagar lake.png">
+            <div class="text">Hussain sagar lake</div>
+        </div>
+    </div>
+    <h1>Food you must Try</h1>
+    <div class="parent">
+
+        <div class="child">
+            <img src="Biryani.png">
+            <div class="text">Hyderabad Biryani</div>
+        </div>
+
+        <div class="child">
+            <img src="Sarva Pindi.png">
+            <div class="text">Sarva Pindi</div>
+        </div>
+
+        <div class="child">
+            <img src="natukodi.png">
+            <div class="text">Natukodi</div>
+        </div>
+
+        <div class="child">
+            <img src="rasmalai.png">
+            <div class="text">Rasmalai</div>
+        </div>
+
+        <div class="child">
+            <img src="sakinalu.png">
+            <div class="text">Sakinalu</div>
+        </div>
+    </div>
+    <footer>
+    <p>&copy; 2026 Telangana Tourism | All Rights Reserved</p>
+    <p>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Services</a> |
+        <a href="#">Contact</a>
+    </p>
+</footer>
+</body>
+
+</html>

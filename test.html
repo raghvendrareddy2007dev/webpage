@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .class {
+            background-color: bisque;
+            border: 2px solid red;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box {
+            position: relative;
+            width: auto;
+            height: 100%;
+            /* top:0%; */
+        }
+        .box img:hover{
+            background-color: grey;
+            box-shadow: -10px -10px 50px black;
+            opacity: 0.2;
+        }
+
+        .text{
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            opacity: 0;
+            font-size: 3em;
+            color: white;
+            transition: 0.5s;
+            background-color: rgb(0, 0, 0, 0.9);
+
+
+        }
+        .box:hover .text{
+
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="class">
+            <div class="box">
+                <img src="charminar.png" alt="Loading..">
+                <div class="text">Charminar</div>
+            </div>
+            <div class="box">
+
+            </div>
+            <div class="box">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
